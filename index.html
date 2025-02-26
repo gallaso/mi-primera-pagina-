@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de pantallas led</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .moving-title {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            animation: moveTitle 10s linear infinite;
+        }
+
+        @keyframes moveTitle {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .logo img {
+            width: 40%; /* Ajusta el tamaño de la imagen aquí */
+            height: auto;
+        }
+
+        .productos {
+            margin: 20px;
+        }
+
+        .producto {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .producto img {
+            width: 40%; /* Ajusta el tamaño de la imagen aquí */
+            height: auto;
+            border-radius: 1px;
+        }
+
+        .producto p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .cta button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cta button:hover {
+            background-color: #ff9900;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .formulario {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .formulario input, .formulario textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .formulario button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .formulario button:hover {
+            background-color: #ff9900;
+        }
+
+        .links {
+            margin: 20px;
+        }
+
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .links li {
+            margin: 10px 0;
+        }
+
+        .links a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="moving-title">pantallas led</h1>
+    </header>
+    <div class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+    <div class="logo">
+        <img src="C:\Users\garci\Downloads\1650581837_LEd_logo_Mesa_de_trabajo_1.png" alt="Logo">
+    </div>
+    <section class="productos" id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="producto">
+            <img src="C:\Users\garci\Downloads\rental-led-screens-1.jpg" alt="Pantalla LED 1">
+            <p>Pantalla pich 3.9 exterior interior contra agua- $10,500 cada modulo precio por caja de 280,000</p>
+        </div>
+        <div class="producto">
+            <img src="C:\Users\garci\Downloads\Blucactus-Que-son-las-pantallas-Led.png" alt="Pantalla LED 2">
+            <p>Pantalla pich 3.0 interior - $8000 cada modulo, precio por caja de 250,000</p>
+        </div>
+        <div class="producto">
+            <img src="C:\Users\garci\Downloads\f86f55d36c094d8c673b4484f7fbad35_medium.jpg" alt="Pantalla LED 3">
+            <p>Pantalla pich 3.9 interior exterior, contra agua - $12,500 cada modulo, precio por caja de 250,000</p>
+        </div>
+        <div class="producto">
+            <img src="C:\Users\garci\Downloads\Blucactus-Que-son-las-pantallas-Led.png" alt="Pantalla LED 4">
+            <p>Pantalla curva interior exterior, contra agua - $20,000 cada modulo, precio por caja de 500,000</p>
+        </div>
+    </section>
+    <div class="cta">
+        <button>¡Compra Ahora!</button>
+    </div>
+    <div class="formulario" id="contacto">
+        <h2>Contacto</h2>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo Electrónico">
+        <textarea placeholder="Mensaje"></textarea>
+        <button>Enviar</button>
+    </div>
+    <section class="links" id="links">
+        <h2>Links Útiles</h2>
+        <ul>
+            <li><a href="file:///C:/Users/Alumno/Desktop/tercera%20pagina.html" target="_blank">Importancia del pitch</a></li>
+            <li><a href="file:///C:/Users/Alumno/Desktop/segunda%20hoja.html" target="_blank">Qué es un pitch</a></li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <p>© 2025 venta de pantallas led. Todos los derechos reservados.</p>
+    </footer>
+    <audio controls>
+        <source src="E:\Madonna - Like A Prayer (Choir Version) [Vinyl Visualizer](M4A_128K).m4a" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</body>
+</html>
+
